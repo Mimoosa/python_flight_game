@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Flight Game</title>
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='gamesite.css') }}"/>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="../static/gamesite.js" defer></script>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="../static/video.small.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <header>
+            <h1 class="header-title">Flight Game</h1>
+            <nav>
+                <ul>
+                    <li><a href="./../about">About</a></li>
+                    <!-- <li><a href="gamesite.html">Game</a></li> -->
+                    <li><a href="./../score">Scores</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="map" class="left-content"></div>
+            <div class="right-content">
+                <article class="weather-box">
+                    <h3>Weather</h3>
+                    <div id="weather-content">
+                        <div id = "weather-icon-container">
+                            <img id="weather-icon" src="" alt="Weather Icon">
+                        </div>
+                        <div id="weather-text-container">
+                            <p id = "weather-temperature"></p>
+                            <p id = weather-temperature-range></p>
+                            <p id = "weather-wind-speed"></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="battery-box">
+                    <h3>Battery Distance Left:</h3>
+                    <p id="battery-level"></p>
+                </article>
+                <article class="score-box">
+                    <h3>Current score</h3>
+                    <p id="current-score"></p>
+                </article>
+            </div>
+        </main>
+    </div>
+   <dialog>
+        <img src="../static/airplane_gameover.webp" alt="game_over_airplane_pic" class="game_over_pic">
+        <p id="game_over_message"></p>
+       <a href="./../about"><button id="go_back_to_beginning" class="button-64"  role="button"><span class="text">Go back to beginning</span></button></a>
+    </dialog>
+</body>
+</html>

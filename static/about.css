@@ -1,0 +1,142 @@
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#background-video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1; /* tämä pitää olla jotta saa videon. z indexi kertoo mihin kohtaan ns pinossa tämä laitetaan ja tämä tarkoitus saada alimmaiseksi*/
+     object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin:0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.25rem 0;
+    text-align: center;
+}
+
+.header-title {
+    margin-top: 0;
+}
+
+nav {
+
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.header-title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+main {
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    border: 2rem;
+    border-radius: 1rem;
+
+
+}
+
+section p {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto 2rem;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1rem;
+}
+
+section h2 {
+    font-size: 2em;
+    margin:2rem;
+}
+
+.button-64 {
+  align-items: center;
+  margin: 20px auto;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}

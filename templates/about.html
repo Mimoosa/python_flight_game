@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About the game</title>
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='about.css') }}"/>
+    <!-- <script src="./../static/button.js" defer></script> -->
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="../static/video.small.mp4" type="video/mp4">
+    </video>
+<div class="container">
+    <header>
+        <h1 class="header-title">Flight Game</h1>
+        <nav>
+            <ul>
+                <li><a href="./../about">About</a></li>
+                <li><a href="./../score">Scores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About the game</h2>
+            <img src="./../static/leonel-fernandez-REZp_5-2wzA-unsplash.png" height="396" width="600" alt="plane">
+            <p class="about-text">
+                Welcome to the Flight Game! In this game, you step into the
+                cockpit of an electric airplane and explore as many European airports as possible. By choosing your
+                flight
+                paths wisely, you'll collect as many points as possible. Remember to keep
+                an eye on your battery consumption. Your battery won't last forever and the game ends when your battery
+                is
+                empty.
+                Good luck with your adventure!
+            </p>
+        </section>
+        <a href="./../gamesite"><button id="startButton" class="button-64" role="button"><span class="text">Start</span></button></a>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+
+ #background-video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     object-fit: cover;
+ }
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.25rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
+
+
+}
+
+.header-title {
+    margin-top: 0;
+
+}
+
+nav {
+
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.header-title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: gold; /* Kultainen väri */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* varjo */
+}
+
+
+
+table {
+    border-collapse: separate;
+    border-radius: 0.5rem; /* Pyöristä taulukon kulmat */
+    overflow: hidden; /* Estä sisältöä tulemasta ulos pyöristetystä kulmasta */
+    background-color: #cce5ff; /* Vaalea sininen */
+    border-spacing: 0; /* Poista välit solujen väliltä */
+    border: 2px solid #3399ff; /* Kirkas sininen */
+    margin: 4rem auto 0 auto;
+    width: 80%; /* Hieman leveämpi */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Hieman voimakkaampi varjo */
+}
+
+/* Otsikon tyyli */
+th {
+    background-color: #3399ff; /* Kirkas sininen */
+    color: #fff; /* Valkoinen */
+    padding: 1.5rem; /* Suurempi sisennys */
+    font-weight: bold; /* Otsikon lihavointi */
+    text-align: center; /* Keskitä teksti */
+    text-transform: uppercase; /* Tekstin muuttaminen isoiksi kirjaimiksi */
+    letter-spacing: 1px; /* Pieni välistys */
+}
+
+/* Solujen tyyli */
+td {
+    padding: 1rem; /* Solut sisennys */
+    text-align: center; /* Keskitä teksti */
+    border-left: 2px solid #3399ff; /* Kirkas sininen */
+    border-right: 2px solid #3399ff; /* Kirkas sininen */
+    border-bottom: 2px solid #3399ff; /* Kirkas sininen */
+}
+
+/* Poista ylimääräinen tila solujen väliltä */
+table td {
+    margin: 0;
+}

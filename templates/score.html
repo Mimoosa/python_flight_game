@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High Scores</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='score.css') }}"/>
+</head>
+<body>
+<video id="background-video" autoplay loop muted>
+    <source src="../static/video.small.mp4" type="video/mp4">
+</video>
+<header>
+    <h1 class="header-title">Flight Game</h1>
+    <nav>
+        <ul>
+            <li><a href="./../about">About</a></li> <!-- muista polku suhteellisesti viitaten taaksepäin -->
+            <li><a href="./../score">Scores</a></li> <!-- eli katsoo hakemistosta yhden askeleen taakse (juureen)
+                                                        ja sitten kutsuu sieltä about- tai score-sivua
+                                                        eli ./../sivunnimitähän
+                                                        .. = yksi taaksepäin
+                                                        . = nykyinen sijainti-->
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>🎉High Scores🎉</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Screen Name 📋</th>
+            <th>Aircraft ✈</th>
+            <th>Score ⭐</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for tulokset in tulokset %}
+            <tr>
+                <td>{{ tulokset.screen_name }}</td>
+                <td>{{ tulokset.aircraft }}</td>
+                <td>{{ tulokset.score }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</main>
+</body>
