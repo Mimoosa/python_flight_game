@@ -45,7 +45,8 @@ This project demonstrates combining web technologies with external APIs and data
 ## Scores Page
 <img width="1896" height="892" alt="Screenshot 2025-11-27 164322" src="https://github.com/user-attachments/assets/6eedd60e-af9e-496d-9d76-9e013cdad65e" />
 
-
+## Demo Video
+[Watch the demo on YouTube](https://youtu.be/t-vyUtrgqzw)
 
 
 
