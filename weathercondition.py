@@ -1,7 +1,7 @@
 import requests
 class Weather:
     def __init__(self, api_key="PUT OWN OPEN WEATHER MAP KEY"):
-        self.api_key = "Your_OWN_KEY"
+        self.api_key = api_key
 
     def get_weather(self, latitude, longitude):
         url = f"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={self.api_key}"
